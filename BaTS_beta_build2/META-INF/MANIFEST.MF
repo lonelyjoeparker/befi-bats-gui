@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: org.virion.burpApp.BaTS_app_beta
+
