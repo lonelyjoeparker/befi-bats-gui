@@ -1,0 +1,20 @@
+*Thanks for raising your bug as a new issue - this helps us help as many people as we can. If you're a user seeking help, **please** read the documentation fully before posting a new bug. If you do need to post a new issue here please, can you tell us:*
+
+### About the software you're running:
+
+- Where did you download it?
+- Do you have all the dependencies installed (e.g. Java)? Which versions *(e.g. `java -version` will often work)*?
+
+### About the system you're running it on:
+
+- What OS [Linux, Mac, Windows] inclusing version??
+- How much RAM you specified / have in total?
+- How many threads / CPU speed?
+
+### About what happened:
+
+- Paste in the command you used to invoke it
+- Paste in the output
+- Paste in the error trace (you can separate 'output' and 'error' on most systems - LMGTFY)
+
+### Any other notes or details that might help.
