@@ -1,20 +1,22 @@
-README
+## README
 
-BaTS version 0.9 beta
-
-=====================
-
-By 
+# BaTS - version 0.9 beta
+ 
 Joe Parker, 
+
 Dept. Biodiversity Informatics & Spatial Analysis
+
 Royal Botanic Gardens, Kew
+
 Richmond UK
+
 joe.parker@kew.org
 
-*Formerly: Dept. Zoology, Oxford UK, joe.parker@zoo.ox.ac.uk*
+*Old address: Dept. Zoology, Oxford UK, joe.parker@zoo.ox.ac.uk*
 
 ---
 
+### Contents:
 
 1. Version
 2. Package contents
@@ -24,7 +26,6 @@ joe.parker@kew.org
 6. Usage
 7. Running the example data
 8. Getting further help
-
 
 ---
 
@@ -111,11 +112,11 @@ done
 ### 8. Getting further help
 *(Please also see notes at http://lonelyjoeparker.com/wp/?page_id=274 and http://lonelyjoeparker.com/wp/?p=1255)*
 
-If you are having issues running BaTS please: 
+If you are having issues running BaTS please follow the steps below (in all communication **please** make sure you include a description of your operating system, BaTS, and Java version;  and paste in a trace file containing the *exact* command used to run BaTS, any output and errors shown, and the input .trees file header plus a few trees (not thousands). This will greatly help spot issues): 
 
 1. Check you have the [newest version](https://github.com/lonelyjoeparker/befi-bats-gui)
 2. Check you have Java SE v1.5 installed
 3. Try running the [example.trees](https://github.com/lonelyjoeparker/befi-bats-gui/blob/master/BaTS_beta_build2/example.trees) test data - see above.
 4. Check the formatting of your input file, paying particular attention to [non-standard characters and whitespace](http://lonelyjoeparker.com/wp/?page_id=274#beast-note).
-5. If your problem still isn't fixed, or seems weird (runs but with odd errors) please [submit a new issue here](https://github.com/lonelyjoeparker/befi-bats-gui/issues).
-6. If none of the above steps work, please [email the author](mailto:joe.parker@kew.org) for more queries.
+5. If your problem still isn't fixed, or seems weird (runs but with odd errors) please [submit a new issue here](https://github.com/lonelyjoeparker/befi-bats-gui/issues). 
+6. If none of the above steps work, please [email the author](mailto:joe.parker@kew.org) for more queries. 
