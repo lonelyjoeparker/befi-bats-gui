@@ -1,7 +1,7 @@
 # befi-bats-gui
 See: http://www.lonelyjoeparker.com/?p=354
-
-And also special guidelines on Befi-BaTS and BEAST files: http://www.lonelyjoeparker.com/?page_id=274#beast-note
+See: https://github.com/lonelyjoeparker/befi-bats-gui/tree/master/BaTS_beta_build2
+See also: special guidelines on Befi-BaTS and BEAST files: http://www.lonelyjoeparker.com/?page_id=274#beast-note
 
 ## FAQs ##
 
