@@ -18,7 +18,7 @@ J Parker, A Rambaut, OG Pybus(2008) Correlating viral phenotypes with phylogeny:
 ## Installation ##
 **Requirements**: This software requires Java. BaTS version 1 (as in the 2008 paper) requires J2SE / Java 1.5+. Befi-BaTS requires Java 1.7+.
 
-**Downloads**: The current BaTS jarfile, manual and example files can be downloaded [here](https://github.com/lonelyjoeparker/befi-bats-gui/tree/master/BaTS_beta_build2).
+**Downloads**: The current BaTS jarfile, manual and example files can be downloaded [here](https://github.com/lonelyjoeparker/befi-bats-gui/releases/tag/0.9) with additional instructions and detail [here](https://github.com/lonelyjoeparker/befi-bats-gui/blob/master/BaTS_beta_build2/README.md).
 
 **Running BaTS**: Please see the [manual](https://github.com/lonelyjoeparker/befi-bats-gui/tree/master/BaTS_beta_build2) for details.
 
