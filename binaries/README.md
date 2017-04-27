@@ -12,4 +12,5 @@ The **stable, published, topology-statistics-only version of BaTS** has therefor
 
 The latest **development build** of BaTS, a.k.a. 'Befi-BaTS' is currently at v0.10.1, and can be found [here](https://github.com/lonelyjoeparker/befi-bats-gui/tree/master/binaries/Befi-BaTS-development). Note that this is unpublished and can't be considered trusted/tested.
 
+## Changelog
 A changelog, including list of previous versions/names, can be found [here](https://github.com/lonelyjoeparker/befi-bats-gui/tree/master/binaries/versions.md), or [here](https://github.com/lonelyjoeparker/befi-bats-gui/tree/master/binaries/versions.xlsx) in .xlsx format.
