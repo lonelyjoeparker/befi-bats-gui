@@ -31,14 +31,29 @@ J Parker, A Rambaut, OG Pybus(2008) Correlating viral phenotypes with phylogeny:
 ## FAQs ##
 
 * *How do I know what the 'state_0','state_1' etc in the output of the MC statistic refer to?*
-  - These will take the same order as the input states, so if your inputs were 'black, red, red, green' (in that order), the input states will map:
-    - 'black'=>state_0
-    - 'red'=>state_1
-    - 'green'=>state_2
-    - ... etc
+  - These occur in the same order as the input states, so if your inputs were 
+```
+begin states;
+1 black, 
+2 red, 
+3 black,
+4 black,
+5 red, 
+4 green
+...
+```
+
+Where the input order (ignoring duplicates) is ```{black, red, green}```, the input states will map to the following MC ouptut statistics:
+
+| Input state | MC statistic |
+| ----------- | ------------ |
+'black' | state_0
+'red' | state_1
+'green' | state_2
+... | state_(*n*)
   
 * *How do I report an error/request a change?*
- - Please use the [issue tracker here](https://github.com/lonelyjoeparker/befi-bats-gui/issues) to report bugs or request changes. **Please** check the existing requests first, including closed ones!
+  - Please use the [issue tracker here](https://github.com/lonelyjoeparker/befi-bats-gui/issues) to report bugs or request changes. **Please** check the existing requests first, including closed ones!
  
  ## About BaTS and Befi-BaTS versions:
 
