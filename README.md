@@ -31,7 +31,7 @@ J Parker, A Rambaut, OG Pybus(2008) Correlating viral phenotypes with phylogeny:
 ## FAQs ##
 
 * *Why don't my trees load?*
-The current version of BaTS is very particular about input formatting (sorry!) The analysis will fail if BaTS can't parse the information it needs from the trees file, or does so wrongly. This can occur for a variety of formatting reasons, but the top two are extra information added by BEAST (see [this note](http://www.lonelyjoeparker.com/?page_id=274#beast-note)) or a missing 'begin states;', 'begin trees;' or ' [&R] ' tag. This last tag is used by BaTS to separate Newick tree data from tree names in the main section of the trees file. For instnce, this formatting is correct (cf. [example.trees](https://github.com/lonelyjoeparker/befi-bats-gui/blob/master/examples/example.trees)):
+ - The current version of BaTS is very particular about input formatting (sorry!) The analysis will fail if BaTS can't parse the information it needs from the trees file, or does so wrongly. This can occur for a variety of formatting reasons, but the top two are extra information added by BEAST (see [this note](http://www.lonelyjoeparker.com/?page_id=274#beast-note)) or a missing `begin states;`, `begin trees;` or ` [&R] ` tag. This last tag is used by BaTS to separate Newick tree data from tree names in the main section of the trees file. For instnce, this formatting is correct (cf. [example.trees](https://github.com/lonelyjoeparker/befi-bats-gui/blob/master/examples/example.trees)):
 ```
 #NEXUS
 
