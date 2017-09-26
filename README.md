@@ -20,18 +20,59 @@ J Parker, A Rambaut, OG Pybus(2008) Correlating viral phenotypes with phylogeny:
 
 **Downloads**: The current BaTS jarfile, manual and example files can be downloaded [here](https://github.com/lonelyjoeparker/befi-bats-gui/releases/tag/0.9) with additional instructions and detail [here](https://github.com/lonelyjoeparker/befi-bats-gui/blob/master/BaTS_beta_build2/README.md).
 
-**Running BaTS**: Please see the [manual](https://github.com/lonelyjoeparker/befi-bats-gui/tree/master/BaTS_beta_build2) for details.
+**Running BaTS**: Please see the [manual](https://github.com/lonelyjoeparker/befi-bats-gui/blob/master/binaries/v0.9.0/BaTS_beta_build2/README.md) for details.
 
 ## Help and instructions ##
-- See: [this README](https://github.com/lonelyjoeparker/befi-bats-gui/tree/master/BaTS_beta_build2/README.md)
+- See: [this README](https://github.com/lonelyjoeparker/befi-bats-gui/blob/master/binaries/v0.9.0/BaTS_beta_build2/README.md)
 - See: [General guidance on BaTS](http://www.lonelyjoeparker.com/?p=354)
 - See: Additional material for BaTS, including [teaching slides](http://evolve.zoo.ox.ac.uk/Evolve/BaTS.html)
-- See also: special guidelines on Befi-BaTS and BEAST files: http://www.lonelyjoeparker.com/?page_id=274#beast-note
+- See also: special **formatting** guidelines on Befi-BaTS and BEAST files: http://www.lonelyjoeparker.com/?page_id=274#beast-note
 
 ## FAQs ##
 
+* *Why don't my trees load?*
+The current version of BaTS is very particular about input formatting (sorry!) The analysis will fail if BaTS can't parse the information it needs from the trees file, or does so wrongly. This can occur for a variety of formatting reasons, but the top two are extra information added by BEAST (see [this note](http://www.lonelyjoeparker.com/?page_id=274#beast-note)) or a missing 'begin states;', 'begin trees;' or ' [&R] ' tag. This last tag is used by BaTS to separate Newick tree data from tree names in the main section of the trees file. For instnce, this formatting is correct (cf. [example.trees](https://github.com/lonelyjoeparker/befi-bats-gui/blob/master/examples/example.trees)):
+```
+#NEXUS
+
+begin states;
+1 black
+2 black
+3 black
+4 black
+5 white
+6 white
+7 white
+8 white
+End;
+
+begin trees;
+tree STATE_1011000 = [&R] (1,2,3,4,5,6,7,8);
+tree STATE_1011000 = [&R] ((1,2,3,4):1,(5,6,7,8):1);
+```
+... but this example **will** fail:
+```
+#NEXUS
+
+begin states;
+1 black
+2 black
+3 black
+4 black
+5 white
+6 white
+7 white
+8 white
+End;
+
+begin trees;
+tree STATE_1011000 = (1,2,3,4,5,6,7,8);               # ' [&] ' tag missing
+tree STATE_1011000 = [&R] ((1,2,3,4):1,(5,6,7,8):1);  # Correct formatting
+tree STATE_1011000 =[&R]((1,2,3,4):1,(5,6,7,8):1);    # Required whitespace absent.
+```
+
 * *How do I know what the 'state_0','state_1' etc in the output of the MC statistic refer to?*
-  - These occur in the same order as the input states, so if your inputs were 
+These occur in the same order as the input states, so if your inputs were 
 ```
 begin states;
 1 black, 
